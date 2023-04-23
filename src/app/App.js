@@ -67,7 +67,6 @@ export default function App() {
         const realm = await Realm.open({
           path: 'myrealm',
           schema: [TaskSchema,TaskSchemaLogin],
-          deleteRealmIfMigrationNeeded: true
         }).then(realm => {
 
           /*const tasks = realm.objects('Task');  
